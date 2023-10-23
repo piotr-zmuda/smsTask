@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.0.13
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: productdb
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3006/MYSQL_DATABASE
+      SPRING_DATABASE_USERNAME: root
+      SPRING_DATABASE_PASSWORD: root
+    ports:
+      - 3306:3306
