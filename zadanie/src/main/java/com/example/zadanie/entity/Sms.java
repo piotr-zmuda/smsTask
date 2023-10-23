@@ -31,6 +31,34 @@ public class Sms {
     @JoinColumn(name = "recipient_id")
     private Client recipient;
 
+    public void setRecipient(Client recipient) {
+        this.recipient = recipient;
+    }
+
+    public Client getSender() {
+        return sender;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public Client getRecipient() {
+        return recipient;
+    }
+
+    public Boolean getCheckedForPhishing() {
+        return checkedForPhishing;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setSender(Client sender) {
+        this.sender = sender;
+    }
+
     private String message;
 
     private Boolean checkedForPhishing;

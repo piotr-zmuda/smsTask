@@ -1,7 +1,6 @@
 package com.example.zadanie.service;
 
 import com.example.zadanie.entity.Client;
-import com.example.zadanie.entity.Product;
 
 import java.util.List;
 

@@ -1,9 +1,7 @@
 package com.example.zadanie.service.impl;
 
 import com.example.zadanie.entity.Client;
-import com.example.zadanie.entity.Product;
 import com.example.zadanie.repo.ClientRepo;
-import com.example.zadanie.repo.ProductRepo;
 import com.example.zadanie.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

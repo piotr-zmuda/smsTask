@@ -2,9 +2,7 @@ package com.example.zadanie.controller;
 
 
 import com.example.zadanie.entity.Client;
-import com.example.zadanie.entity.Product;
 import com.example.zadanie.service.ClientService;
-import com.example.zadanie.service.ProductService;
 import com.example.zadanie.service.SmsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

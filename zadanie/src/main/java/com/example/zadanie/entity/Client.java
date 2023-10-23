@@ -36,11 +36,41 @@ public class Client {
     @OneToMany(mappedBy = "sender", cascade = CascadeType.MERGE)
     private List<Sms> sentSms = new ArrayList<>();
 
+
+    public void setServiceUp(Boolean serviceUp) {
+        isServiceUp = serviceUp;
+    }
+
+    public void setMobileNumber(Integer mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Boolean getServiceUp() {
+        return isServiceUp;
+    }
+
+    public void setIsServiceUp(Boolean serviceUp) {
+        isServiceUp = serviceUp;
+    }
+
+
+    public void setReceivedSms(List<Sms> receivedSms) {
+        this.receivedSms = receivedSms;
+    }
+
+    public void setSentSms(List<Sms> sentSms) {
+        this.sentSms = sentSms;
+    }
+
     public Integer getMobileNumber() {
         return mobileNumber;
     }
 
-    public Boolean getServiceUp() {
+    public Boolean getIsServiceUp() {
         return isServiceUp;
     }
 
